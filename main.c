@@ -1,7 +1,9 @@
 #include "monty.h"
+#define _POSIX_C_SOURCE 200809L
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
-#define _GNU_SOURCE
+#include <string.h>
 
 bus_t bus = {NULL, NULL, NULL, 0};
 

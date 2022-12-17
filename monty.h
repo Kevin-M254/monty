@@ -56,6 +56,7 @@ typedef struct bus_s
 	int lifi;
 } bus_t;
 extern bus_t bus;
+
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
@@ -80,6 +81,6 @@ void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void f_stack(stack_t **head, unsigned int counter);
-
+size_t getline(char **lineptr, size_t *n, FILE *stream);
 
 #endif
